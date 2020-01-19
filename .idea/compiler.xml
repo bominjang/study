@@ -4,7 +4,7 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="study.main" target="1.8" />
       <module name="study.test" target="1.8" />
     </bytecodeTargetLevel>
