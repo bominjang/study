@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e3442252-2bc0-4a68-9a84-534c35aaf0da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/study/repository/UserRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/study/repository/UserRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/study/repository/OrderDetailRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/study/repository/OrderDetailRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/study/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/study/repository/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +129,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderDetailRepositoryTest.create">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.read">
     <configuration name="C:/devel/study" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -220,7 +228,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="study.test" />
       <extension name="coverage">
         <pattern>
@@ -230,7 +238,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.study.repository" />
       <option name="MAIN_CLASS_NAME" value="com.example.study.repository.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -246,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest.read" />
         <item itemvalue="JUnit.OrderDetailRepositoryTest.create" />
         <item itemvalue="JUnit.UserRepositoryTest.create" />
         <item itemvalue="JUnit.ItemRepositoryTest.read" />
         <item itemvalue="JUnit.ItemRepositoryTest.create" />
-        <item itemvalue="JUnit.UserRepositoryTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +306,7 @@
       <workItem from="1578285340918" duration="2409000" />
       <workItem from="1578384272534" duration="15949000" />
       <workItem from="1579410926275" duration="7441000" />
-      <workItem from="1579499680446" duration="3135000" />
+      <workItem from="1579499680446" duration="4663000" />
     </task>
     <servers />
   </component>

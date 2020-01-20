@@ -21,11 +21,11 @@ public class OrderDetailRepositoryTest{
         orderDetail.setOrderAt(LocalDateTime.now());
 
         //어떤 사람에 대한 index id
-        orderDetail.setUserId(4L);
+        //orderDetail.setUserId(4L);
 
 
         //어떤 상품에 대한 index id
-        orderDetail.setItemId(1L);
+        //orderDetail.setItem(1L);
 
         //index id 4번에 해당하는 사람이 index id 1에 해당하는 상품을 구매했다.
 

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @NoArgsConstructor //기본생성자
 @Entity //==table 매칭. table명과 변수 명이 같으면 굳이 매칭 안해줘도 됨.
@@ -31,4 +32,10 @@ public class User {
     private LocalDateTime updatedAt;
 
     private String updatedBy;
+
+    //user는 1이지만 orderDetail은 N이다.
+    //fetch type과 mapping할 변수를 각각 지정한다.
+    //여기서는 OrderDetail이라는 클래스 안에, user 변수와 매핑시키겠다! 라고 선언한 것.
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    private List<OrderDetail> orderDetailList;
 }
