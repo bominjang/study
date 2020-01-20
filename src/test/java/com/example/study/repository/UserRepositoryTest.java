@@ -48,7 +48,7 @@ public class UserRepositoryTest extends StudyApplicationTests {
     public void read(){
         //findAll : db에 있는 User table을 list로 모두 가져오겠다.
         //findById : 한 건을 select
-        Optional<User> user = userRepository.findById(4L);
+        Optional<User> user = userRepository.findByAccount("TestUser03");
         //있을 수 도 있고 없을 수도 있을 때!
         //다음은, Optional 에 대한 결과가 존재할 때 수행
         //즉, user가 존재 할 때만 수행
