@@ -20,10 +20,18 @@ public class User {
     //@Column(name = "account") 컬럼과 변수의 명이 다를 때 이걸 씀.
     private String account;
 
+    private String password;
+
+    private String status;
+
     private String email;
 
     private String phoneNumber; //java에서는 camelcase, db에서는 snake case
     //이러한 변수 차이점을 jpa에서 지원해줌.
+
+    private LocalDateTime registeredAt;
+
+    private LocalDateTime unregisteredAt;
 
     private LocalDateTime createdAt;
 
