@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3442252-2bc0-4a68-9a84-534c35aaf0da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/AdminUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/OrderGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/Partner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/AdminUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/OrderGroupRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/PartnerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/study/repository/OrderDetailRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/study/repository/UserRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -310,7 +304,8 @@
       <workItem from="1578384272534" duration="15949000" />
       <workItem from="1579410926275" duration="7441000" />
       <workItem from="1579499680446" duration="7581000" />
-      <workItem from="1579601124266" duration="3263000" />
+      <workItem from="1579601124266" duration="3866000" />
+      <workItem from="1579701687559" duration="834000" />
     </task>
     <servers />
   </component>
