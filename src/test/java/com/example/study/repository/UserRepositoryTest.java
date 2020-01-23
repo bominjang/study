@@ -21,44 +21,43 @@ public class UserRepositoryTest extends StudyApplicationTests {
     //스프링이 만들어서 그것을 관리하는 것.
     //Autowired라는 것을 통해서 주입하는 것.
     private UserRepository userRepository;
-    private Object LocalDateTime;
 
     @Test
     public void create(){
-        //String sql = insert into user(%s, %s, %d) value (account, email, age)
-        //이런식으로 쿼리문을 가지고 했었는데, JPA는 object를 통해 관리함.
-       //DI의 기본 핵심 : single tone
-        //유저는 하나만 생성해서 autowired에 다같이 쓰겠다!
+
+        String account = "Test01";
+        String password = "Test01";
+        String status = "REGISTERED";
+        String email = "Test01@gmail.com";
+        String phoneNumber = "010-1111-2222";
+        LocalDateTime registeredAt = LocalDateTime.now();
+        LocalDateTime createdAt = LocalDateTime.now();
+        String createdBy = "AdminServer";
+
         User user = new User();
-        //user.setId(); setId는 db에서 autoincreament이기 때문에 자동으로 올라가는 것임.
-        //이렇게 해줄 필요 없음.
-        user.setAccount("TestUser03");
-        user.setEmail("TestUser03@gmail.com");
-        user.setPhoneNumber("010-1111-3333");
-        user.setCreatedAt(java.time.LocalDateTime.now());
-        user.setCreatedBy("TestUser03");
+        user.setAccount(account);
+        user.setPassword(password);
+        user.setStatus(status);
+        user.setEmail(email);
+        user.setPhoneNumber(phoneNumber);
+        user.setRegisteredAt(registeredAt);
+        user.setCreatedAt(createdAt);
+        user.setCreatedBy(createdBy);
 
         User newUser = userRepository.save(user);
-        System.out.println("newUser"+newUser);
+
+        Assert.assertNotNull(newUser);
+
 
     }
 
     @Test
     @Transactional
     public void read(){
-        //findAll : db에 있는 User table을 list로 모두 가져오겠다.
-        //findById : 한 건을 select
-        Optional<User> user = userRepository.findByAccount("TestUser03");
-        //있을 수 도 있고 없을 수도 있을 때!
-        //다음은, Optional 에 대한 결과가 존재할 때 수행
-        //즉, user가 존재 할 때만 수행
-        user.ifPresent(selectUser ->{
-            selectUser.getOrderDetailList().stream().forEach(detail->{
-                //id가 아니라, 객체로 바로 반환할 수 있음.
-                Item item = detail.getItem();
-                System.out.println(detail.getItem());
-            });
-        });
+
+        User user = userRepository.findFirstByPhoneNumberOrderByIdDesc("010-1111-2222");
+        Assert.assertNotNull(user);
+
     }
 
     @Test

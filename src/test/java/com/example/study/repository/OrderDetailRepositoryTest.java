@@ -18,7 +18,7 @@ public class OrderDetailRepositoryTest{
     public void create(){
         OrderDetail orderDetail = new OrderDetail();
 
-        orderDetail.setOrderAt(LocalDateTime.now());
+       // orderDetail.setOrderAt(LocalDateTime.now());
 
         //어떤 사람에 대한 index id
         //orderDetail.setUserId(4L);

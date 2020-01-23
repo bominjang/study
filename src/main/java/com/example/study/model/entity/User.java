@@ -40,10 +40,4 @@ public class User {
     private LocalDateTime updatedAt;
 
     private String updatedBy;
-
-    //user는 1이지만 orderDetail은 N이다.
-    //fetch type과 mapping할 변수를 각각 지정한다.
-    //여기서는 OrderDetail이라는 클래스 안에, user 변수와 매핑시키겠다! 라고 선언한 것.
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-    private List<OrderDetail> orderDetailList;
 }

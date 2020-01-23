@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3442252-2bc0-4a68-9a84-534c35aaf0da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/AdminUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/OrderGroupRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/PartnerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/study/repository/CategoryRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/StudyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/StudyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/model/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/StudyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/StudyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/CategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/study/repository/OrderDetailRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/study/repository/OrderDetailRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/study/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/study/repository/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +129,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ItemRepositoryTest.read">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.read">
     <configuration name="C:/devel/study" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,7 +164,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ItemRepositoryTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoryRepositoryTest.Create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="study.test" />
       <extension name="coverage">
         <pattern>
@@ -170,8 +173,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.study.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.example.study.repository.ItemRepositoryTest" />
-      <option name="METHOD_NAME" value="create" />
+      <option name="MAIN_CLASS_NAME" value="com.example.study.repository.CategoryRepositoryTest" />
+      <option name="METHOD_NAME" value="Create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryRepositoryTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="study.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.study.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.study.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.study.repository.CategoryRepositoryTest" />
+      <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,22 +207,6 @@
       <option name="PACKAGE_NAME" value="com.example.study.repository" />
       <option name="MAIN_CLASS_NAME" value="com.example.study.repository.ItemRepositoryTest" />
       <option name="METHOD_NAME" value="read" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderDetailRepositoryTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.study.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.study.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.example.study.repository.OrderDetailRepositoryTest" />
-      <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ItemRepositoryTest.read" />
         <item itemvalue="JUnit.UserRepositoryTest.read" />
-        <item itemvalue="JUnit.OrderDetailRepositoryTest.create" />
         <item itemvalue="JUnit.UserRepositoryTest.create" />
-        <item itemvalue="JUnit.ItemRepositoryTest.create" />
+        <item itemvalue="JUnit.CategoryRepositoryTest.read" />
+        <item itemvalue="JUnit.CategoryRepositoryTest.Create" />
+        <item itemvalue="JUnit.ItemRepositoryTest.read" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +308,8 @@
       <workItem from="1579410926275" duration="7441000" />
       <workItem from="1579499680446" duration="7581000" />
       <workItem from="1579601124266" duration="3866000" />
-      <workItem from="1579701687559" duration="834000" />
+      <workItem from="1579701687559" duration="4544000" />
+      <workItem from="1579777855111" duration="1325000" />
     </task>
     <servers />
   </component>
