@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -47,5 +44,8 @@ public class OrderGroup {
 
     private String updatedBy;
 
-    private  Long userId;
+    //OrderGroup N : User 1
+    @ManyToOne
+    //이 변수는, OneToMany의 mappedBy의 변수와 일치해야 함.
+    private  Long user;
 }
