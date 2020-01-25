@@ -3,6 +3,7 @@ package com.example.study.model.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 @Entity
+@ToString(exclude = {"user"})
 public class OrderGroup {
 
     @Id
@@ -47,5 +49,5 @@ public class OrderGroup {
     //OrderGroup N : User 1
     @ManyToOne
     //이 변수는, OneToMany의 mappedBy의 변수와 일치해야 함.
-    private  Long user;
+    private  User user;
 }

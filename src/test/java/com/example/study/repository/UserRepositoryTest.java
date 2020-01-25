@@ -7,8 +7,6 @@ import com.example.study.model.entity.User;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;
@@ -56,6 +54,17 @@ public class UserRepositoryTest extends StudyApplicationTests {
     public void read(){
 
         User user = userRepository.findFirstByPhoneNumberOrderByIdDesc("010-1111-2222");
+
+        if(user !=null){
+            user.getOrderGroupList().stream().forEach(orderGroup -> {
+                System.out.println("수령인 : "+orderGroup.getRevName());
+                System.out.println("수령지 : "+orderGroup.getRevAddress());
+                System.out.println("총 금액 : "+orderGroup.getTotalPrice());
+                System.out.println("총 수량 : "+orderGroup.getTotalQuantity());
+
+            });
+        }
+
         Assert.assertNotNull(user);
 
     }
