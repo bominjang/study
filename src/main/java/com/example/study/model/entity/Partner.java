@@ -3,18 +3,18 @@ package com.example.study.model.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.apache.tomcat.jni.Local;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Data
+@ToString(exclude = {"itemList","category"})
 public class Partner {
 
     @Id
@@ -43,7 +43,14 @@ public class Partner {
 
     private String createdBy;
 
-    private Long categoryId;
+    //각 카테고리마다 여러가지 partner가 존재
+    //partner N : 1 Category
+    @ManyToOne
+    private Category category;
+
+    //Partner 1: N Item
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "partner")
+    private List<Item> itemList;
 
 
 }

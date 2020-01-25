@@ -28,7 +28,7 @@ public class OrderDetailRepositoryTest{
 
         //어떤 상품에 대한 index id
         //orderDetail.setOrderGroupId(1L); //어떠한 장바구니에
-        orderDetail.setItemId(1L); //어떠한 상품
+        //orderDetail.setItemId(1L); //어떠한 상품
 
         orderDetail.setCreatedAt(LocalDateTime.now());
         orderDetail.setCreatedBy("AdminServer");

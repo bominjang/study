@@ -4,6 +4,8 @@ import ch.qos.logback.core.net.SyslogOutputStream;
 import com.example.study.StudyApplicationTests;
 import com.example.study.model.entity.Item;
 import com.example.study.model.entity.User;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,9 +68,12 @@ public class UserRepositoryTest extends StudyApplicationTests {
                 System.out.println("----------주문상세----------");
 
                 orderGroup.getOrderDetailList().forEach(orderDetail->{
+                    System.out.println("파트너사 이름 : "+orderDetail.getItem().getPartner().getName());
+                    System.out.println("파트너사 카테고리 : "+orderDetail.getItem().getPartner().getCategory().getTitle());
+                    System.out.println("주문 상품 : "+orderDetail.getItem().getName());
+                    System.out.println("고객센터 번호 : "+orderDetail.getItem().getPartner().getCallCenter());
                     System.out.println("주문의 상태 : "+orderDetail.getStatus());
                     System.out.println("도착 예정 일자 : "+orderDetail.getArrivalDate());
-                    
                 });
             });
         }
