@@ -4,6 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -14,6 +19,8 @@ import java.util.List;
 @Data
 @Entity
 @ToString(exclude = {"partnerList"})
+@EntityListeners(AuditingEntityListener.class)
+
 public class Category {
 
     @Id
@@ -24,13 +31,16 @@ public class Category {
 
     private String title;
 
+    @CreatedDate
     private LocalDateTime createdAt;
 
+    @CreatedBy
     private String createdBy;
 
+    @LastModifiedDate
     private LocalDateTime updatedAt;
 
-    private String updatedBy;
+    @LastModifiedBy
 
     //Category 1: N Partner
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
