@@ -1,6 +1,7 @@
 package com.example.study.controller;
 
 import com.example.study.model.SearchParam;
+import com.example.study.model.network.Header;
 import org.springframework.web.bind.annotation.*;
 
 //이것은 컨트롤러로 활용할거야!
@@ -33,8 +34,7 @@ public class GetController {
     //localhost:8080/api/multiParameter?account=abcd&email=study@gamil.com&page=10
     //RequestParam@ 을 쓰기에는 너무 파라미터가 많아짐. -> 객체로 받자!
 
-  //  @GetMapping("/getMultiParameter") //주소 지정정
-   /*
+    @GetMapping("/getMultiParameter") //주소 지정
     public SearchParam getMultiParameter(SearchParam searchParam){
         //해당 값 잘 들어왔는 지 확인
         System.out.println(searchParam.getAccount());
@@ -50,5 +50,10 @@ public class GetController {
 
     }
 
-    */
+    @GetMapping("/header")
+    public Header getHeader(){
+
+        //{"resultCode: : "OK", "description":"OK"}
+        return Header.builder().resultCode("OK").description("OK").build();
+    }
 }

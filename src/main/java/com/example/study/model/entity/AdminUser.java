@@ -2,8 +2,10 @@ package com.example.study.model.entity;
 
 import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -19,6 +21,8 @@ import java.time.LocalDateTime;
 @Entity
 //해당 entityListener는 이 감시자 EntityListener를 사용하겠다!
 @EntityListeners(AuditingEntityListener.class)
+@Builder
+@Accessors(chain = true)
 public class AdminUser {
 
     @Id

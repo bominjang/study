@@ -1,9 +1,7 @@
 package com.example.study.model.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
+import lombok.experimental.Accessors;
 import org.apache.tomcat.jni.Local;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
@@ -21,7 +19,8 @@ import java.util.List;
 @Data
 @ToString(exclude = {"itemList","category"})
 @EntityListeners(AuditingEntityListener.class)
-
+@Builder
+@Accessors(chain = true)
 public class Partner {
 
     @Id
