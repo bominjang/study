@@ -64,6 +64,21 @@ public class UserRepositoryTest extends StudyApplicationTests {
 
         User user = userRepository.findFirstByPhoneNumberOrderByIdDesc("010-1111-2222");
 
+
+        //업데이트를 한다고 할 때, 원래는
+       /*
+       user.setEmail();
+        user.setStatus();
+        */
+       //위와 같이 일일이 해줘야 했음.
+
+        //하지만 @Accessors(chain = true)을 사용하면
+        //체이닝을 통해 setter를 사용할 수 있음!
+        user.setEmail("").setPhoneNumber("").setStatus("");
+         //객체를 생성할 때 또한 체이닝을 사용할 수 있음.
+        User newUser = new User().setAccount("").setEmail("").setPassword("");
+        //이런 식으로, 세 개의 값만 가지는 객체를 생성할 수도 있음.
+        
         if(user !=null){
             user.getOrderGroupList().stream().forEach(orderGroup -> {
                 System.out.println("----------주문묶음----------");
