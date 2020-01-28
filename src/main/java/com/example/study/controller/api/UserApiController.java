@@ -13,7 +13,7 @@ public class UserApiController implements CrudInterface<UserApiRequest, UserApiR
 
     @Override
     @PostMapping("") //api/user로 매핑
-    public Header<UserApiResponse> create(@RequestBody UserApiRequest userApiRequest) {
+    public Header<UserApiResponse> create(@RequestBody Header<UserApiRequest> userApiRequest) {
         return null;
     }
 
@@ -25,7 +25,7 @@ public class UserApiController implements CrudInterface<UserApiRequest, UserApiR
 
     @Override
     @PutMapping("") //api/user
-    public Header<UserApiResponse> update(@RequestBody UserApiRequest request) {
+    public Header<UserApiResponse> update(@RequestBody Header<UserApiRequest> request) {
         return null;
     }
 

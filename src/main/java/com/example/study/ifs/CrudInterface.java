@@ -7,11 +7,11 @@ public interface CrudInterface<Req, Res> {
 
     //todo request object 추가
 
-    Header<Res> create(Req request);
+    Header<Res> create(Header<Req> request);
 
     Header<Res> read(Long id);
 
-    Header<Res> update(Req request);
+    Header<Res> update(Header<Req> request);
 
     Header<Res> delete(Long id);
 

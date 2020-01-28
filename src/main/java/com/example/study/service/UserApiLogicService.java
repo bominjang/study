@@ -20,7 +20,10 @@ public class UserApiLogicService implements CrudInterface<UserApiRequest, UserAp
     //2. user 생성
     //3. 생성된 데이터 -> UserApiResponse return
     @Override
-    public Header<UserApiResponse> create(UserApiRequest request) {
+    public Header<UserApiResponse> create(Header<UserApiRequest> request) {
+
+
+
         return null;
     }
 
@@ -30,7 +33,7 @@ public class UserApiLogicService implements CrudInterface<UserApiRequest, UserAp
     }
 
     @Override
-    public Header<UserApiResponse> update(UserApiRequest request) {
+    public Header<UserApiResponse> update(Header<UserApiRequest> request) {
         return null;
     }
 
