@@ -2,17 +2,18 @@ package com.example.study.ifs;
 
 import com.example.study.model.network.Header;
 
-public interface CrudInterface {
+//Generic type으로 선언하게 되면, 모든 컨트롤러가 동일한 인터페이스를 상속받을 수 있음!
+public interface CrudInterface<Req, Res> {
 
     //todo request object 추가
 
-    Header create();
+    Header<Res> create(Req request);
 
-    Header read(Long id);
+    Header<Res> read(Long id);
 
-    Header update();
+    Header<Res> update(Req request);
 
-    Header delete();
+    Header<Res> delete(Long id);
 
 
 }
