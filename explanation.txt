@@ -1,0 +1,10 @@
+--------header-------
+transaction_time : 요청 시간
+result_code : 해당 api에 대한 응답
+description : 설명
+---------body--------
+data : 매번 바뀌는 값.
+pagination : 
+
+network에 대한 코딩
+
