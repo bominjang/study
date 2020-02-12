@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3442252-2bc0-4a68-9a84-534c35aaf0da" name="Default Changelist" comment="">
-<<<<<<< HEAD
+    <list default="true" id="e3442252-2bc0-4a68-9a84-534c35aaf0da" name="Default Changelist" comment="@Slf4j annotation 추가. 로깅">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/ifs/CrudInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/ifs/CrudInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/controller/api/UserApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/controller/api/UserApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/study/service/UserApiLogicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/study/service/UserApiLogicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/controller/api/UserApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/controller/api/UserApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/study/service/UserApiLogicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/study/service/UserApiLogicService.java" afterDir="false" />
->>>>>>> 4195b6aafaacb5df7a4f0d22a49363cdf9ac4e39
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +55,9 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="study" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -90,8 +92,8 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth0" value="15" />
+    <property name="RequestMappingsPanelWidth1" value="15" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -262,8 +264,19 @@
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
+        <option name="contentProportion" value="0.18169399" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e5a406c3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e5a406c3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@41b2737a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -303,12 +316,7 @@
       <workItem from="1579964274552" duration="541000" />
       <workItem from="1580049169434" duration="5941000" />
       <workItem from="1580224819214" duration="1200000" />
-<<<<<<< HEAD
-      <workItem from="1580253431674" duration="3345000" />
-      <workItem from="1581424068997" duration="846000" />
-=======
       <workItem from="1580253431674" duration="1318000" />
->>>>>>> 4195b6aafaacb5df7a4f0d22a49363cdf9ac4e39
     </task>
     <servers />
   </component>
@@ -329,6 +337,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="@Slf4j annotation 추가. 로깅" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Slf4j annotation 추가. 로깅" />
   </component>
 </project>

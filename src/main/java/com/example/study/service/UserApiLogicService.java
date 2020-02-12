@@ -24,8 +24,9 @@ public class UserApiLogicService implements CrudInterface<UserApiRequest, UserAp
     //3. 생성된 데이터 -> UserApiResponse return
     @Override
     public Header<UserApiResponse> create(Header<UserApiRequest> request) {
-<<<<<<< HEAD
-        //1.reaueset data
+
+        //1.requeset data
+        //data 부분에 있는 apiRequest를 가져옴.
         UserApiRequest userApiRequest = request.getData();
 
         //2. User 생성 - client 단에서 받은 정보로 User 객체 생성
@@ -43,12 +44,7 @@ public class UserApiLogicService implements CrudInterface<UserApiRequest, UserAp
         //이것은 read나 update 등 다른 메소드에서도 사용할 수 있으니,따로 메소드로 빼자!
 
         return response(newUser);
-=======
 
-
-
-        return null;
->>>>>>> 4195b6aafaacb5df7a4f0d22a49363cdf9ac4e39
     }
 
     @Override
